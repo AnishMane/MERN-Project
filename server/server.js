@@ -1,11 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+const app = express();
 
 dotenv.config();
 
-const app = express();
+import userRoute from "./router/userRoute.js";
 
+app.use(express.json());
 mongoose.connect(process.env.URI)
 .then(
     () => {
@@ -21,6 +23,4 @@ mongoose.connect(process.env.URI)
     console.log("error", error);
 });
 
-app.get("/", (req,res)=> {
-    res.send("api running")
-});
+app.use( userRoute)
