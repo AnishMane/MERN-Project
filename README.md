@@ -73,6 +73,6 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Anish - anishmane70@example.com
+Anish - anishmane70@gmail.com
 
 
